@@ -13,6 +13,10 @@ public class DtpSelector implements DeferredImportSelector {
 
     @Override
     public String[] selectImports(AnnotationMetadata importingClassMetadata) {
-        return new String[0];
+        return new String[]{
+                DtpBeanDefinitionRegistrar.class.getName(),
+                DtpBeanPostProcessor.class.getName(),
+                DtpMonitor.class.getName()
+        };
     }
 }

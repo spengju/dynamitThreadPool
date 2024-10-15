@@ -58,6 +58,6 @@ public class DtpRegistry {
 
         executor.setCorePoolSize(properties.getCorePoolSize());
         executor.setMaximumPoolSize(properties.getMaximumPoolSize());
-
+//        executor.setKeepAliveTime();
     }
 }
